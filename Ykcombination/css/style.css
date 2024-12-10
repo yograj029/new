@@ -1,0 +1,140 @@
+body {
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'MedievalSharp', cursive;
+    background-image: url("../images/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: inherit;
+    background-size: cover;
+    font-style: italic;
+}
+
+li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+span {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    font-size: 2rem;
+    font-weight: 100vh;
+    font-style: italic;
+    ]
+}
+
+a:hover {
+    color: black;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    display: flex;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle-btn {
+    color: gray;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown_menu {
+    position: absolute;
+    right: 2rem;
+    top: 100%;
+    height: 0;
+    width: 100%;
+    /* background-color:transparent; */
+    background-image: url("../images/old-paper-texture.jpg");
+    background-position: 50%;
+    overflow: hidden;
+    /* backdrop-filter: blur(15px); */
+    border-radius: 100px 0px 100px 0px;
+    background-size: cover;
+    background-blend-mode: darken;
+    opacity: 50%;
+    transition: height o.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* WELCOME */
+
+section#welcome {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#welcome h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px) {
+    .navbar .links {
+        display: none;
+    }
+    .navbar .toggle-btn {
+        display: block;
+    }
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media(max-width:576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
