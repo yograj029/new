@@ -1,0 +1,93 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+/* --- NAVBAR SECTION --- */
+
+.navbar {
+    padding: 0%;
+}
+
+ul.navbar-nav,
+li.navbar-item,
+a.nav-link {
+    color: white;
+}
+
+a.nav-link:active {
+    color: black;
+}
+
+button.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* --- NAVBAR SECTION END --- */
+
+h1.heading {
+    font-size: 6rem;
+}
+
+h3.sub-heading {
+    font-size: 4rem;
+}
+
+h4.sub-subheading {
+    font-size: 2.5rem;
+}
+
+h6 {
+    color: white;
+    font-size: 50px;
+}
+
+p {
+    color: white;
+    margin: 30px;
+}
+
+@media (min-width:992px) and (max-width:1700px) {
+    h1.heading {
+        font-size: 4rem;
+    }
+    h3.sub-heading {
+        font-size: 3rem;
+    }
+    h4.sub-subheading {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:226px) and (max-width:991px) {
+    h1.heading {
+        font-size: 2.5rem;
+    }
+    h3.sub-heading {
+        font-size: 2rem;
+    }
+    h4.sub-subheading {
+        font-size: 1.3rem;
+    }
+}
+
+ul.social-icon {
+    display: flex;
+}
+
+li,
+a.nav-link {
+    list-style: none;
+    padding: 10px;
+}
+
+a.nav-link:hover {
+    color: black;
+}
